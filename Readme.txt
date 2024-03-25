@@ -1,1 +1,1 @@
-* Run sslimport.
+Script that automates ticket endorsement
