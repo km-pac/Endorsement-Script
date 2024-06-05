@@ -4,7 +4,7 @@ import os
 from colorama import Fore, Style
 
 
-os.system('cls')
+os.system('clear')
 
 # Fetch Endorsement ticket from skype
 token_loc = "token"
