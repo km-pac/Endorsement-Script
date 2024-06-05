@@ -7,7 +7,8 @@ from colorama import Fore, Style
 
 def connect_skype(user, pwd, token):  
     s = Skype()  
-    s.conn.setTokenFile(token)  
+    s.conn.setTokenFile(token)
+    print(f"{s} ####################")
     try:  
         s.conn.readToken()  
     except:  
