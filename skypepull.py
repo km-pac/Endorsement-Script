@@ -10,7 +10,7 @@ def connect_skype(user, pwd, token):
     s.conn.setTokenFile(token)  
     try:  
         s.conn.readToken()  
-    except SkypeAuthException:  
+    except:  
         s.conn.setUserPwd(user, pwd)  
         s.conn.getSkypeToken()  
         s.conn.writeToken()  
