@@ -9,8 +9,8 @@ os.system('clear')
 # Fetch Endorsement ticket from skype
 token_loc = "token"
 endorsement_thread_id = "19:f47c3501aa2c402f8fefbd8643489311@thread.skype"
-# sk = connect_skype("lkejna1022@gmail.com","vortvbgkfpqlhuiv",token_loc)
-sk = connect_skype("lkejna1022@gmail.com","skktawtuhjudkfkf",token_loc)
+sk = connect_skype("lkejna1022@gmail.com","weuoxykgvumoidon",token_loc)
+# sk = connect_skype("lkejna1022@gmail.com","skktawtuhjudkfkf",token_loc)
 description = fetch_description(endorsement_thread_id, sk)
 
 # Push the ticket to Redmine
