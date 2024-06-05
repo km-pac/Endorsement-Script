@@ -7,12 +7,11 @@ from colorama import Fore, Style
 
 def connect_skype(user, pwd, token):  
     s = Skype()  
+    s.conn.setTokenFile(token)  
     try:  
-        s.conn.setTokenFile(token)
         s.conn.readToken()  
-    except:  
+    except SkypeAuthException:  
         s.conn.setUserPwd(user, pwd)  
-        print(f"{s} ####################")
         s.conn.getSkypeToken()  
         s.conn.writeToken()  
     finally:  
